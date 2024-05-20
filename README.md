@@ -42,3 +42,12 @@ and weighted edges, we establish critical connections among melanoma’s relevan
                 /bin/zsh
  
 ## Citation
+
+## License
+This repository is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+Acknowledge any funding sources, contributors, or other relevant parties.
+
+## Contact
+For any questions or issues, please contact First Author or open an issue in this repository.
