@@ -20,5 +20,22 @@ and weighted edges, we establish critical connections among melanoma’s relevan
 ## Setup
 1. compile the docker file
 2. config the script the image path
+> cd docker
+> docker build -t 7pgd .
+> docker create --name <container_name> -it \
+                --shm-size=32G \
+                -p 6006:6006 \
+                -p 8080:8080 \
+                -e DISPLAY=unix$DISPLAY \
+                -e GDK_SCALE \
+                -e GDK_DPI_SCALE \
+                -v /dev/video0:/dev/video0 \
+                -v /dev/video1:/dev/video1 \
+                -v /tmp/.X11-unix:/tmp/.X11-unix \
+                -v <proj_path>:/root/code \
+                -v /mnt/f/datasets:/root/data \
+                --gpus all \
+                <docker_image> \
+                /bin/zsh
  
 ## Citation
