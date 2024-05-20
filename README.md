@@ -21,7 +21,9 @@ and weighted edges, we establish critical connections among melanoma’s relevan
 1. compile the docker file
 2. config the script the image path
 > cd docker
+
 > docker build -t 7pgd .
+
 > docker create --name <container_name> -it \
                 --shm-size=32G \
                 -p 6006:6006 \
