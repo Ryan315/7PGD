@@ -1,0 +1,8 @@
+pandas
+matplotlib
+keras
+opencv-python-headless
+numpy
+torch
+sklearn
+tqdm

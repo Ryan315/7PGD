@@ -1,0 +1,14 @@
+mode: multimodal
+model_name: 7PGCN
+shape: [224, 224]
+batch_size: 64
+num_workers: 8
+data_mode: Normal
+deterministic: true
+random_seeds:
+  Normal: 170
+  self_evaluated: 183
+rounds: 1
+lr: 1e-5
+epochs: 500
+swa_epoch: 100
