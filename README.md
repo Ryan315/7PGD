@@ -8,7 +8,7 @@ This is the repo for paper "Incorporating Clinical Knowledge Graphs to Deep Lear
 </p>
 
 <p align="center">
-  <img src="pics/workflow.jpg" width="90%" alt="Image 1">
+  <img src="pics/workflow.jpg" width="90%" alt="Image 0">
 </p>
 
 ## Abstract
