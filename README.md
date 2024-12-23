@@ -1,20 +1,18 @@
 # 7PGD
-This is the repo for paper "Improving Melanoma Detection Through Clinical Knowledge-Based Topological Graphs and Data-Driven Quantification Standards"
+This is the repo for paper "Incorporating Clinical Knowledge Graphs to Deep Learning-Based 7PCL for Melanoma Detection from Multiple Skin Lesions"
 
 <p align="center">
-  <img src="images/derm_1.PNG" width="30%" alt="Image 1">
-  <img src="images/derm_2.PNG" width="30%" alt="Image 2">
-  <img src="images/derm_3.PNG" width="30%" alt="Image 3">
+  <img src="pics/derm_1.PNG" width="30%" alt="Image 1">
+  <img src="pics/derm_2.PNG" width="30%" alt="Image 2">
+  <img src="pics/derm_3.PNG" width="30%" alt="Image 3">
 </p>
 
 <p align="center">
-  <img src="images/workflow_1.jpg" width="90%" alt="Image 1">
+  <img src="pics/workflow.jpg" width="90%" alt="Image 1">
 </p>
 
 ## Abstract
-The 7-point checklist (7PCL) is widely used in dermoscopy to identify malignant melanoma lesions needing urgent medical attention. It assigns point values to seven attributes: major attributes are worth two points each, and minor ones are worth one point each. A total score of three or higher prompts further evaluation, often including a biopsy. However, a significant limitation of current methods is the uniform weighting of attributes, which leads to imprecision and neglects their interconnections. Previous deep learning studies have treated the prediction of each attribute with the same importance as predicting melanoma, which fails to recognize the clinical significance of the attributes for melanoma. To address these limitations, we introduce a novel diagnostic method that integrates two innovative elements: a Clinical Knowledge-Based Topological Graph (CKTG) and a Gradient Diagnostic Strategy with Data-Driven Weighting Standards (GD-DDW). The CKTG integrates 7PCL attributes with diagnostic information, revealing both internal and external associations. By employing adaptive receptive domains and weighted edges, we establish connections among melanoma's relevant features. Concurrently, GD-DDW emulates dermatologists' diagnostic processes, who first observe the visual characteristics associated with melanoma and then make predictions. Our model uses two imaging modalities for the same lesion, ensuring comprehensive feature acquisition. Our method shows outstanding performance in predicting malignant melanoma and its features, achieving an average AUC value of 85%. This was validated on the EDRA dataset, the largest publicly available dataset for the 7-point checklist algorithm. Specifically, the integrated weighting system can provide clinicians with valuable data-driven benchmarks for their evaluations.
-
-
+The 7-point checklist (7PCL) is a widely used diagnostic tool in dermoscopy for identifying malignant melanoma by assigning point values to seven specific attributes. However, the traditional 7PCL is limited to distinguishing between malignant melanoma and melanocytic nevi, and falls short in scenarios where multiple skin diseases with appearances similar to melanoma coexist. To address this limitation, we propose a novel diagnostic framework that integrates a clinical knowledge-based topological graph (CKTG) with a gradient diagnostic strategy featuring a data-driven weighting system (GD-DDW). The CKTG captures both the internal and external relationships among the 7PCL attributes, while the GD-DDW emulates dermatologists' diagnostic processes, prioritizing visual observation before making predictions. Additionally, we introduce a multimodal feature extraction approach leveraging a dual-attention mechanism to enhance feature extraction through cross-modal interaction and unimodal collaboration. This method incorporates meta-information to uncover interactions between clinical data and image features, ensuring more accurate and robust predictions. Our approach, evaluated on the EDRA dataset, achieved an average AUC of 88.6\%, demonstrating superior performance in melanoma detection and feature prediction. This integrated system provides data-driven benchmarks for clinicians, significantly enhancing the precision of melanoma diagnosis. 
 
 ## Setup
 1. compile the docker file
